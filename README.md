@@ -2,6 +2,8 @@
 
 [![tests](https://github.com/deschantkn/AI-TestGuard/actions/workflows/tests.yml/badge.svg)](https://github.com/deschantkn/AI-TestGuard/actions/workflows/tests.yml)
 
+**Étudiant** : Deschant Kounou · **Enseignant** : Dr. Moustapha Der
+
 Stratégie de test complète (QA pour l'IA) d'un classifieur de transactions
 frauduleuses entraîné sur le jeu *Credit Card Fraud Detection* (Kaggle / ULB).
 L'objectif n'est pas seulement d'obtenir un bon score. Il s'agit de **montrer, par des
