@@ -2,7 +2,7 @@
 name = "ai-testguard"
 version = "1.0.0"
 description = "Qualification QA d'un modèle de détection de fraude bancaire"
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
@@ -24,7 +24,7 @@ skip_covered = false
 
 [tool.ruff]
 line-length = 100
-target-version = "py311"
+target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "N", "S"]
