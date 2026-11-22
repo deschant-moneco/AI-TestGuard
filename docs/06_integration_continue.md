@@ -2,9 +2,9 @@
 
 *Activité 9.*
 
-* **Dépôt** : <https://github.com/deschant-moneco/AI-TestGuard>
+* **Dépôt** : <https://github.com/deschantkn/AI-TestGuard>
 * **Workflow** : [`.github/workflows/tests.yml`](../.github/workflows/tests.yml)
-* **Historique des exécutions** : <https://github.com/deschant-moneco/AI-TestGuard/actions>
+* **Historique des exécutions** : <https://github.com/deschantkn/AI-TestGuard/actions>
 
 ## 6.1 Organisation du workflow
 
@@ -33,10 +33,10 @@ Configurée par l'API GitHub (`PUT /repos/…/branches/main/protection`) :
 
 | # | Run | Événement | Résultat | Ce que cela prouve |
 |---|---|---|---|---|
-| 1 | [45078564558](https://github.com/deschant-moneco/AI-TestGuard/actions/runs/45078564558) | push `main` (premier commit) | ❌ Python 3.11 · ✅ Python 3.12 | **Échec réel détecté par la CI** : `numpy==2.5.5` exige Python ≥ 3.12 (anomalie A-07). Corrigé en passant la matrice à 3.12 et 3.13 |
-| 2 | [45078708564](https://github.com/deschant-moneco/AI-TestGuard/actions/runs/45078708564) | push `main` (correctif) | ✅ 3.12 · ✅ 3.13 | **Exécution réussie** : Ruff OK, 141 tests passés, couverture ≥ 85 % |
-| 3 | [45078828351](https://github.com/deschant-moneco/AI-TestGuard/actions/runs/45078828351) / [PR #1](https://github.com/deschant-moneco/AI-TestGuard/pull/1) | pull request | ❌ 3.12 · ❌ 3.13 | **Échec volontaire correctement détecté** (détails ci-dessous) |
-| 4 | [45078911927](https://github.com/deschant-moneco/AI-TestGuard/actions/runs/45078911927) | `workflow_dispatch` (full=true) | ✅ quick · ✅ full (5 min) | Campagne complète sur le jeu Kaggle : empreinte du jeu vérifiée, métriques **identiques au bit près** à l'exécution locale macOS (rappel 0,8, précision 0,49350…, ROC-AUC 0,96212…), non-régression `accept`, test lent passé |
+| 1 | [45078564558](https://github.com/deschantkn/AI-TestGuard/actions/runs/45078564558) | push `main` (premier commit) | ❌ Python 3.11 · ✅ Python 3.12 | **Échec réel détecté par la CI** : `numpy==2.5.5` exige Python ≥ 3.12 (anomalie A-07). Corrigé en passant la matrice à 3.12 et 3.13 |
+| 2 | [45078708564](https://github.com/deschantkn/AI-TestGuard/actions/runs/45078708564) | push `main` (correctif) | ✅ 3.12 · ✅ 3.13 | **Exécution réussie** : Ruff OK, 141 tests passés, couverture ≥ 85 % |
+| 3 | [45078828351](https://github.com/deschantkn/AI-TestGuard/actions/runs/45078828351) / [PR #1](https://github.com/deschantkn/AI-TestGuard/pull/1) | pull request | ❌ 3.12 · ❌ 3.13 | **Échec volontaire correctement détecté** (détails ci-dessous) |
+| 4 | [45078911927](https://github.com/deschantkn/AI-TestGuard/actions/runs/45078911927) | `workflow_dispatch` (full=true) | ✅ quick · ✅ full (5 min) | Campagne complète sur le jeu Kaggle : empreinte du jeu vérifiée, métriques **identiques au bit près** à l'exécution locale macOS (rappel 0,8, précision 0,49350…, ROC-AUC 0,96212…), non-régression `accept`, test lent passé |
 
 ### Détail de l'échec volontaire (PR #1)
 

@@ -1,6 +1,6 @@
 # AI-TestGuard — qualification d'un modèle de détection de fraude bancaire
 
-[![tests](https://github.com/deschant-moneco/AI-TestGuard/actions/workflows/tests.yml/badge.svg)](https://github.com/deschant-moneco/AI-TestGuard/actions/workflows/tests.yml)
+[![tests](https://github.com/deschantkn/AI-TestGuard/actions/workflows/tests.yml/badge.svg)](https://github.com/deschantkn/AI-TestGuard/actions/workflows/tests.yml)
 
 Stratégie de test complète (QA pour l'IA) d'un classifieur de transactions
 frauduleuses entraîné sur le jeu *Credit Card Fraud Detection* (Kaggle / ULB).

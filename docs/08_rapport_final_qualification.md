@@ -1,6 +1,6 @@
 # Rapport final de qualification : modèle de détection de fraude bancaire
 
-**Projet** : AI-TestGuard · **Dépôt** : <https://github.com/deschant-moneco/AI-TestGuard> · **Version qualifiée** : baseline v1.0 (code `f2338df`, régression logistique, seuil 0,97) · **Date** : 22 novembre 2026
+**Projet** : AI-TestGuard · **Dépôt** : <https://github.com/deschantkn/AI-TestGuard> · **Version qualifiée** : baseline v1.0 (code `f2338df`, régression logistique, seuil 0,97) · **Date** : 22 novembre 2026
 
 ---
 
