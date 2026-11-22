@@ -86,7 +86,7 @@ def test_oversized_payload_and_too_many_transactions(model, X_test):
 
 
 def test_logs_do_not_leak_sensitive_values(model, X_test, caplog):
-    caplog.set_level(logging.DEBUG, logger="ai_testguard")
+    caplog.set_level(logging.DEBUG, logger="fraudcheck")
     tx = {**tx_from(X_test), "Amount": 9876.54}
     handle_request(model, body(tx))
     handle_request(model, body({**tx, "Amount": "oops"}))

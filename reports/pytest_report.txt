@@ -1,8 +1,7 @@
 ============================= test session starts ==============================
-platform darwin -- Python 3.12.8, pytest-9.2.0, pluggy-1.7.0 -- /Users/deschant/Documents/msc/esmt/M2/Tests_Logiciels/eval_formative_1/AI-TestGuard/.venv/bin/python
-cachedir: .pytest_cache
+platform darwin -- Python 3.12.8, pytest-9.2.0, pluggy-1.7.0 -- /Users/deschant/Documents/msc/esmt/M2/Tests_Logiciels/eval_formative_1/FraudCheck/.venv/bin/python
 hypothesis profile 'default'
-rootdir: /Users/deschant/Documents/msc/esmt/M2/Tests_Logiciels/eval_formative_1/AI-TestGuard
+rootdir: /Users/deschant/Documents/msc/esmt/M2/Tests_Logiciels/eval_formative_1/FraudCheck
 configfile: pyproject.toml
 testpaths: tests
 plugins: cov-7.1.0, hypothesis-6.170.17
@@ -151,7 +150,7 @@ tests/test_security.py::test_http_endpoint_end_to_end PASSED             [ 98%]
 tests/test_security.py::test_no_secrets_in_repository PASSED             [ 99%]
 tests/test_security.py::test_sensitive_files_are_gitignored PASSED       [100%]
 
-- generated xml file: /Users/deschant/Documents/msc/esmt/M2/Tests_Logiciels/eval_formative_1/AI-TestGuard/reports/junit.xml -
+- generated xml file: /Users/deschant/Documents/msc/esmt/M2/Tests_Logiciels/eval_formative_1/FraudCheck/reports/junit.xml -
 ================================ tests coverage ================================
 _______________ coverage: platform darwin, python 3.12.8-final-0 _______________
 
@@ -170,4 +169,4 @@ app/training.py           63      1    98%   140
 ----------------------------------------------------
 TOTAL                    540     19    96%
 Coverage HTML written to dir reports/coverage_html
-============================= 142 passed in 6.61s ==============================
+============================= 142 passed in 7.07s ==============================

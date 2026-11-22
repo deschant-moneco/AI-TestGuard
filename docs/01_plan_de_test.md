@@ -1,5 +1,7 @@
 # 1. Plan de test : système de détection de fraude bancaire
 
+**Étudiant** : Deschant Kounou · **Enseignant** : Dr. Moustapha Der
+
 *Activité 1 : ce qu'on teste, pourquoi, comment et avec quels critères.*
 
 ## 1.1 Périmètre du système
