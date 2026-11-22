@@ -1,0 +1,77 @@
+{
+  "environment": {
+    "machine": "arm64",
+    "processor": "arm",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.12.8",
+    "cpu_count_logical": 12,
+    "ram_gb": 19.3
+  },
+  "protocol": {
+    "warmup": 50,
+    "repetitions_single": 2000,
+    "repetitions_api": 1000,
+    "batch_repetitions": 5
+  },
+  "single_prediction_with_validation": {
+    "p50_ms": 1.4541875571012497,
+    "p95_ms": 1.546398364007473,
+    "p99_ms": 1.7505066469311708,
+    "mean_ms": 1.4756485410034657,
+    "max_ms": 5.03462553024292,
+    "n": 2000
+  },
+  "single_prediction_raw_pipeline": {
+    "p50_ms": 0.9673545137047768,
+    "p95_ms": 1.0184203274548054,
+    "p99_ms": 1.0761283710598946,
+    "mean_ms": 0.979434497654438,
+    "max_ms": 4.803625866770744,
+    "n": 2000
+  },
+  "api_http_request": {
+    "p50_ms": 2.8453748673200607,
+    "p95_ms": 3.209944535046816,
+    "p99_ms": 3.4710398130118847,
+    "mean_ms": 2.879432901740074,
+    "max_ms": 4.533166065812111,
+    "n": 1000
+  },
+  "throughput": {
+    "1": {
+      "median_s": 0.003293834626674652,
+      "pred_per_s": 303.59751272927974
+    },
+    "100": {
+      "median_s": 0.002192331477999687,
+      "pred_per_s": 45613.540198419876
+    },
+    "1000": {
+      "median_s": 0.0023714154958724976,
+      "pred_per_s": 421689.07209239487
+    },
+    "10000": {
+      "median_s": 0.004755709320306778,
+      "pred_per_s": 2102735.7490711664
+    },
+    "56746": {
+      "median_s": 0.0248134583234787,
+      "pred_per_s": 2286904.1171220564
+    }
+  },
+  "model_file_kb": 4.2,
+  "memory": {
+    "rss_before_load_mb": 664.731648,
+    "rss_after_load_mb": 664.04352,
+    "model_load_delta_mb": -0.6881280000000061,
+    "rss_scoring_delta_mb": 0.09830399999998463,
+    "tracemalloc_peak_scoring_test_mb": 55.866869
+  },
+  "thresholds": {
+    "single_latency_p95_ms": 10.0,
+    "api_latency_p95_ms": 50.0,
+    "batch_throughput_min_per_s": 20000,
+    "model_size_max_mb": 5.0,
+    "memory_increase_max_mb": 200.0
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "reference_alert_rate": 0.0029782359679266894,
+  "streams": {
+    "J1 \u2014 test (m\u00eame distribution)": {
+      "n": 56746,
+      "psi_alerts": 0,
+      "psi_warnings": 0,
+      "top_psi": [
+        {
+          "feature": "V25",
+          "psi": 0.0005,
+          "status": "ok"
+        },
+        {
+          "feature": "V23",
+          "psi": 0.0005,
+          "status": "ok"
+        },
+        {
+          "feature": "V3",
+          "psi": 0.0004,
+          "status": "ok"
+        },
+        {
+          "feature": "V12",
+          "psi": 0.0004,
+          "status": "ok"
+        },
+        {
+          "feature": "Time",
+          "psi": 0.0003,
+          "status": "ok"
+        }
+      ],
+      "alert_rate": {
+        "rate": 0.0027138476720826137,
+        "expected": 0.0029782359679266894,
+        "low": 0.0014891179839633447,
+        "high": 0.005956471935853379,
+        "alert": false
+      }
+    },
+    "J2 \u2014 d\u00e9rive V +0,5\u03c3 / Amount \u00d73": {
+      "n": 56746,
+      "psi_alerts": 29,
+      "psi_warnings": 0,
+      "top_psi": [
+        {
+          "feature": "V28",
+          "psi": 1.9891,
+          "status": "alerte"
+        },
+        {
+          "feature": "V8",
+          "psi": 1.7362,
+          "status": "alerte"
+        },
+        {
+          "feature": "V27",
+          "psi": 1.7015,
+          "status": "alerte"
+        },
+        {
+          "feature": "V20",
+          "psi": 1.6279,
+          "status": "alerte"
+        },
+        {
+          "feature": "V21",
+          "psi": 1.3978,
+          "status": "alerte"
+        }
+      ],
+      "alert_rate": {
+        "rate": 0.0019560850103972085,
+        "expected": 0.0029782359679266894,
+        "low": 0.0014891179839633447,
+        "high": 0.005956471935853379,
+        "alert": false
+      }
+    },
+    "J3 \u2014 seconde journ\u00e9e uniquement": {
+      "n": 27749,
+      "psi_alerts": 4,
+      "psi_warnings": 2,
+      "top_psi": [
+        {
+          "feature": "Time",
+          "psi": 6.1033,
+          "status": "alerte"
+        },
+        {
+          "feature": "V1",
+          "psi": 0.5104,
+          "status": "alerte"
+        },
+        {
+          "feature": "V3",
+          "psi": 0.3287,
+          "status": "alerte"
+        },
+        {
+          "feature": "V28",
+          "psi": 0.2968,
+          "status": "alerte"
+        },
+        {
+          "feature": "V15",
+          "psi": 0.113,
+          "status": "attention"
+        }
+      ],
+      "alert_rate": {
+        "rate": 0.003315434790442899,
+        "expected": 0.0029782359679266894,
+        "low": 0.0014891179839633447,
+        "high": 0.005956471935853379,
+        "alert": false
+      }
+    },
+    "J4 \u2014 d\u00e9rive V \u22120,5\u03c3": {
+      "n": 56746,
+      "psi_alerts": 27,
+      "psi_warnings": 1,
+      "top_psi": [
+        {
+          "feature": "V1",
+          "psi": 3.1704,
+          "status": "alerte"
+        },
+        {
+          "feature": "V28",
+          "psi": 1.7689,
+          "status": "alerte"
+        },
+        {
+          "feature": "V20",
+          "psi": 1.6225,
+          "status": "alerte"
+        },
+        {
+          "feature": "V8",
+          "psi": 1.5772,
+          "status": "alerte"
+        },
+        {
+          "feature": "V27",
+          "psi": 1.5422,
+          "status": "alerte"
+        }
+      ],
+      "alert_rate": {
+        "rate": 0.007401402742043492,
+        "expected": 0.0029782359679266894,
+        "low": 0.0014891179839633447,
+        "high": 0.005956471935853379,
+        "alert": true
+      }
+    }
+  }
+}

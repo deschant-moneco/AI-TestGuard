@@ -1,0 +1,206 @@
+{
+  "baseline": {
+    "model": "logreg",
+    "params": {
+      "C": 0.01
+    },
+    "threshold": 0.97,
+    "code_version": "non versionn\u00e9",
+    "metrics": {
+      "precision": 0.4911242603550296,
+      "recall": 0.8829787234042553,
+      "f1": 0.6311787072243346,
+      "fpr": 0.0015180667596335457,
+      "fnr": 0.11702127659574468,
+      "roc_auc": 0.9812247215782185,
+      "pr_auc": 0.7922430313892823,
+      "tp": 83,
+      "fp": 86,
+      "fn": 11,
+      "tn": 56565
+    }
+  },
+  "candidates": {
+    "v1.1-logreg-C1": {
+      "description": "R\u00e9gularisation plus faible (C=1)",
+      "model": "logreg",
+      "params": {
+        "C": 1.0
+      },
+      "threshold": 0.97,
+      "metrics": {
+        "recall": {
+          "baseline": 0.8829787234042553,
+          "candidate": 0.8829787234042553,
+          "delta": 0.0,
+          "tolerance": 0.03,
+          "status": "stable"
+        },
+        "precision": {
+          "baseline": 0.4911242603550296,
+          "candidate": 0.48255813953488375,
+          "delta": -0.00856612082014585,
+          "tolerance": 0.05,
+          "status": "stable"
+        },
+        "pr_auc": {
+          "baseline": 0.7922430313892823,
+          "candidate": 0.7894904499749902,
+          "delta": -0.0027525814142921323,
+          "tolerance": 0.02,
+          "status": "stable"
+        },
+        "roc_auc": {
+          "baseline": 0.9812247215782185,
+          "candidate": 0.9819332403664544,
+          "delta": 0.0007085187882358568,
+          "tolerance": 0.01,
+          "status": "stable"
+        },
+        "fpr": {
+          "baseline": 0.0015180667596335457,
+          "candidate": 0.0015710225768300649,
+          "delta": 5.295581719651915e-05,
+          "tolerance": 0.001,
+          "status": "stable"
+        }
+      },
+      "decision": "accept"
+    },
+    "v1.2-tree-d12": {
+      "description": "Remplacement par l'arbre de d\u00e9cision r\u00e9gl\u00e9",
+      "model": "tree",
+      "params": {
+        "max_depth": 12,
+        "min_samples_leaf": 20
+      },
+      "threshold": 0.99,
+      "metrics": {
+        "recall": {
+          "baseline": 0.8829787234042553,
+          "candidate": 0.776595744680851,
+          "delta": -0.1063829787234043,
+          "tolerance": 0.03,
+          "status": "r\u00e9gression"
+        },
+        "precision": {
+          "baseline": 0.4911242603550296,
+          "candidate": 0.776595744680851,
+          "delta": 0.2854714843258214,
+          "tolerance": 0.05,
+          "status": "am\u00e9lioration"
+        },
+        "pr_auc": {
+          "baseline": 0.7922430313892823,
+          "candidate": 0.7549124099155171,
+          "delta": -0.0373306214737652,
+          "tolerance": 0.02,
+          "status": "r\u00e9gression"
+        },
+        "roc_auc": {
+          "baseline": 0.9812247215782185,
+          "candidate": 0.908917121141502,
+          "delta": -0.07230760043671647,
+          "tolerance": 0.01,
+          "status": "r\u00e9gression"
+        },
+        "fpr": {
+          "baseline": 0.0015180667596335457,
+          "candidate": 0.00037069072037563324,
+          "delta": -0.0011473760392579125,
+          "tolerance": 0.001,
+          "status": "am\u00e9lioration"
+        }
+      },
+      "decision": "reject"
+    },
+    "v1.3-logreg-nobalance": {
+      "description": "Suppression de la pond\u00e9ration des classes",
+      "model": "logreg",
+      "params": {
+        "C": 0.01,
+        "class_weight": null
+      },
+      "threshold": 0.01,
+      "metrics": {
+        "recall": {
+          "baseline": 0.8829787234042553,
+          "candidate": 0.8936170212765957,
+          "delta": 0.010638297872340385,
+          "tolerance": 0.03,
+          "status": "stable"
+        },
+        "precision": {
+          "baseline": 0.4911242603550296,
+          "candidate": 0.5283018867924528,
+          "delta": 0.03717762643742323,
+          "tolerance": 0.05,
+          "status": "am\u00e9lioration"
+        },
+        "pr_auc": {
+          "baseline": 0.7922430313892823,
+          "candidate": 0.7978036031631404,
+          "delta": 0.005560571773858047,
+          "tolerance": 0.02,
+          "status": "stable"
+        },
+        "roc_auc": {
+          "baseline": 0.9812247215782185,
+          "candidate": 0.9787078179686974,
+          "delta": -0.0025169036095210595,
+          "tolerance": 0.01,
+          "status": "stable"
+        },
+        "fpr": {
+          "baseline": 0.0015180667596335457,
+          "candidate": 0.001323895429912976,
+          "delta": -0.00019417132972056978,
+          "tolerance": 0.001,
+          "status": "stable"
+        }
+      },
+      "decision": "investigate",
+      "note": "Seuil optimal en bordure de grille (0.01)"
+    }
+  },
+  "replay_baseline": {
+    "metrics": {
+      "recall": {
+        "baseline": 0.8829787234042553,
+        "candidate": 0.8829787234042553,
+        "delta": 0.0,
+        "tolerance": 0.03,
+        "status": "stable"
+      },
+      "precision": {
+        "baseline": 0.4911242603550296,
+        "candidate": 0.4911242603550296,
+        "delta": 0.0,
+        "tolerance": 0.05,
+        "status": "stable"
+      },
+      "pr_auc": {
+        "baseline": 0.7922430313892823,
+        "candidate": 0.7922430313892823,
+        "delta": 0.0,
+        "tolerance": 0.02,
+        "status": "stable"
+      },
+      "roc_auc": {
+        "baseline": 0.9812247215782185,
+        "candidate": 0.9812247215782185,
+        "delta": 0.0,
+        "tolerance": 0.01,
+        "status": "stable"
+      },
+      "fpr": {
+        "baseline": 0.0015180667596335457,
+        "candidate": 0.0015180667596335457,
+        "delta": 0.0,
+        "tolerance": 0.001,
+        "status": "stable"
+      }
+    },
+    "decision": "accept"
+  }
+}
