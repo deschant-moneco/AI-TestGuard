@@ -20,7 +20,7 @@ from app import config
 from app.prediction import FraudModel
 from app.preprocessing import DataValidationError, validate_data
 
-logger = logging.getLogger("ai_testguard.api")
+logger = logging.getLogger("fraudcheck.api")
 
 MAX_BODY_BYTES = 16 * 1024
 MAX_TRANSACTIONS_PER_REQUEST = 100

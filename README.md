@@ -1,6 +1,6 @@
-# AI-TestGuard — qualification d'un modèle de détection de fraude bancaire
+# FraudCheck — qualification d'un modèle de détection de fraude bancaire
 
-[![tests](https://github.com/deschantkn/AI-TestGuard/actions/workflows/tests.yml/badge.svg)](https://github.com/deschantkn/AI-TestGuard/actions/workflows/tests.yml)
+[![tests](https://github.com/deschantkn/FraudCheck/actions/workflows/tests.yml/badge.svg)](https://github.com/deschantkn/FraudCheck/actions/workflows/tests.yml)
 
 **Étudiant** : Deschant Kounou · **Enseignant** : Dr. Moustapha Der
 
