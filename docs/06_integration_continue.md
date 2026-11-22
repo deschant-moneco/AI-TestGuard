@@ -79,3 +79,5 @@ Rapport d'exécution complet (142 tests, y compris le test lent) : [`reports/pyt
 | `app/api.py`, `app/robustness.py` | 95 % |
 | `app/experiment.py` | 89 % (repli sans git non exercé) |
 | **Total** | **96 %** |
+
+> **Note** : le dépôt a d'abord été créé sous le compte `deschant-moneco`, puis transféré vers `deschantkn`. Les identifiants de runs, la PR #1 et la protection de branche sont conservés lors d'un transfert GitHub. Les anciennes URL redirigent vers les nouvelles.
