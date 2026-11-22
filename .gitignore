@@ -25,3 +25,6 @@ data/*.zip
 models/
 
 .DS_Store
+
+# Rapports générés localement (volumineux)
+reports/coverage_html/
