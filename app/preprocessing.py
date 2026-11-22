@@ -142,7 +142,7 @@ def preprocess_data(df: pd.DataFrame) -> pd.DataFrame:
     if missing:
         raise DataValidationError(f"Colonnes requises absentes : {missing}")
 
-    x = df[config.FEATURE_COLUMNS].astype("float64").replace([np.inf, -np.inf], np.nan)
+    x = df[config.FEATURE_COLUMNS].astype("float64")  # RÉGRESSION VOLONTAIRE : inf non traité
     out = x[config.PCA_FEATURES].copy()
     out["log_amount"] = np.log1p(x["Amount"].clip(lower=0))
     hour = (x["Time"] % 86_400) / 3_600
